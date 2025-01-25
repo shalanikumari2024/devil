@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.about-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(50px);
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  margin-bottom: 20px;
+  transform: scale(0.8);
+  animation: scaleIn 1s ease-out forwards;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.highlight {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.about-button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.about-button:hover {
+  background-color: #45a049;
+  transform: translateY(-3px);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="about-container">
+    <h1 class="about-title">About Me</h1>
+    <p class="about-description">
+      Hello! I'm <span class="highlight">Shalani Kumari</span>I am a passionate web developer and designer with a love for crafting elegant and functional websites. 
+      I specialize in creating user-friendly, visually appealing designs. 
+      When I'm not coding, you can find me exploring new technologies, reading, or enjoying the outdoors.
+    </p>
+    <button class="about-button">Learn More</button>
+  </div>
+</body>
+</html>

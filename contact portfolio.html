@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <style>
+    
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards;
+}
+
+.contact-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.contact-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.contact-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #4CAF50;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.contact-card h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contact-card a:hover {
+  color: #45a049;
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  </style>
+</head>
+<body>
+  <section class="contact-section">
+    <h1 class="contact-title">Get in Touch</h1>
+    <p class="contact-description">
+      Have a question or want to work together? Feel free to reach out!
+    </p>
+    <div class="contact-container">
+     
+      <div class="contact-card">
+        <i class="icon email-icon"></i>
+        <h2>Email</h2>
+        <p><a href="mailto:youremail@example.com">Shalani2024@gmail.com</a></p>
+      </div>
+
+    
+      <div class="contact-card">
+        <i class="icon phone-icon"></i>
+        <h2>Phone</h2>
+        <p><a href="tel:+1234567890">+91 7209242199</a></p>
+      </div>
+
+      <div class="contact-card">
+        <i class="icon location-icon"></i>
+        <h2>Location</h2>
+        <p>Mahesh Nagar Road No-4 , Patna.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
